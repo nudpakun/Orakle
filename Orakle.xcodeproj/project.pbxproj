@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DB31720218224D700C6407D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3171F218224D700C6407D /* AppDelegate.swift */; };
+		7DB31722218224D700C6407D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB31721218224D700C6407D /* ViewController.swift */; };
+		7DB31725218224D700C6407D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB31723218224D700C6407D /* Main.storyboard */; };
+		7DB31727218224D800C6407D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DB31726218224D800C6407D /* Assets.xcassets */; };
+		7DB3172A218224D800C6407D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB31728218224D800C6407D /* LaunchScreen.storyboard */; };
+		7DB31735218224D800C6407D /* OrakleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB31734218224D800C6407D /* OrakleTests.swift */; };
+		7DB31740218224D800C6407D /* OrakleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3173F218224D800C6407D /* OrakleUITests.swift */; };
+		7DB31745218224D800C6407D /* Orakle WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7DB31744218224D800C6407D /* Orakle WatchKit App.app */; };
+		7DB3174B218224D800C6407D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB31749218224D800C6407D /* Interface.storyboard */; };
+		7DB3174D218224D800C6407D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DB3174C218224D800C6407D /* Assets.xcassets */; };
+		7DB31754218224D800C6407D /* Orakle WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7DB31753218224D800C6407D /* Orakle WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7DB31759218224D800C6407D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB31758218224D800C6407D /* InterfaceController.swift */; };
+		7DB3175B218224D800C6407D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3175A218224D800C6407D /* ExtensionDelegate.swift */; };
+		7DB3175D218224D800C6407D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3175C218224D800C6407D /* NotificationController.swift */; };
+		7DB3175F218224D900C6407D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DB3175E218224D900C6407D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DB31731218224D800C6407D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DB31714218224D700C6407D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DB3171B218224D700C6407D;
+			remoteInfo = Orakle;
+		};
+		7DB3173C218224D800C6407D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DB31714218224D700C6407D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DB3171B218224D700C6407D;
+			remoteInfo = Orakle;
+		};
+		7DB31746218224D800C6407D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DB31714218224D700C6407D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DB31743218224D800C6407D;
+			remoteInfo = "Orakle WatchKit App";
+		};
+		7DB31755218224D800C6407D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DB31714218224D700C6407D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DB31752218224D800C6407D;
+			remoteInfo = "Orakle WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7DB31767218224D900C6407D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7DB31754218224D800C6407D /* Orakle WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB3176B218224D900C6407D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7DB31745218224D800C6407D /* Orakle WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7DB3171C218224D700C6407D /* Orakle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orakle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB3171F218224D700C6407D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DB31721218224D700C6407D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DB31724218224D700C6407D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DB31726218224D800C6407D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DB31729218224D800C6407D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7DB3172B218224D800C6407D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB31730218224D800C6407D /* OrakleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrakleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB31734218224D800C6407D /* OrakleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrakleTests.swift; sourceTree = "<group>"; };
+		7DB31736218224D800C6407D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB3173B218224D800C6407D /* OrakleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrakleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB3173F218224D800C6407D /* OrakleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrakleUITests.swift; sourceTree = "<group>"; };
+		7DB31741218224D800C6407D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB31744218224D800C6407D /* Orakle WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Orakle WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB3174A218224D800C6407D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7DB3174C218224D800C6407D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DB3174E218224D800C6407D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB31753218224D800C6407D /* Orakle WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Orakle WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB31758218224D800C6407D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7DB3175A218224D800C6407D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7DB3175C218224D800C6407D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7DB3175E218224D900C6407D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DB31760218224D900C6407D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB31761218224D900C6407D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DB31719218224D700C6407D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB3172D218224D800C6407D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB31738218224D800C6407D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB31750218224D800C6407D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DB31713218224D700C6407D = {
+			isa = PBXGroup;
+			children = (
+				7DB3171E218224D700C6407D /* Orakle */,
+				7DB31733218224D800C6407D /* OrakleTests */,
+				7DB3173E218224D800C6407D /* OrakleUITests */,
+				7DB31748218224D800C6407D /* Orakle WatchKit App */,
+				7DB31757218224D800C6407D /* Orakle WatchKit Extension */,
+				7DB3171D218224D700C6407D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DB3171D218224D700C6407D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DB3171C218224D700C6407D /* Orakle.app */,
+				7DB31730218224D800C6407D /* OrakleTests.xctest */,
+				7DB3173B218224D800C6407D /* OrakleUITests.xctest */,
+				7DB31744218224D800C6407D /* Orakle WatchKit App.app */,
+				7DB31753218224D800C6407D /* Orakle WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB3171E218224D700C6407D /* Orakle */ = {
+			isa = PBXGroup;
+			children = (
+				7DB3171F218224D700C6407D /* AppDelegate.swift */,
+				7DB31721218224D700C6407D /* ViewController.swift */,
+				7DB31723218224D700C6407D /* Main.storyboard */,
+				7DB31726218224D800C6407D /* Assets.xcassets */,
+				7DB31728218224D800C6407D /* LaunchScreen.storyboard */,
+				7DB3172B218224D800C6407D /* Info.plist */,
+			);
+			path = Orakle;
+			sourceTree = "<group>";
+		};
+		7DB31733218224D800C6407D /* OrakleTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DB31734218224D800C6407D /* OrakleTests.swift */,
+				7DB31736218224D800C6407D /* Info.plist */,
+			);
+			path = OrakleTests;
+			sourceTree = "<group>";
+		};
+		7DB3173E218224D800C6407D /* OrakleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7DB3173F218224D800C6407D /* OrakleUITests.swift */,
+				7DB31741218224D800C6407D /* Info.plist */,
+			);
+			path = OrakleUITests;
+			sourceTree = "<group>";
+		};
+		7DB31748218224D800C6407D /* Orakle WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7DB31749218224D800C6407D /* Interface.storyboard */,
+				7DB3174C218224D800C6407D /* Assets.xcassets */,
+				7DB3174E218224D800C6407D /* Info.plist */,
+			);
+			path = "Orakle WatchKit App";
+			sourceTree = "<group>";
+		};
+		7DB31757218224D800C6407D /* Orakle WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7DB31758218224D800C6407D /* InterfaceController.swift */,
+				7DB3175A218224D800C6407D /* ExtensionDelegate.swift */,
+				7DB3175C218224D800C6407D /* NotificationController.swift */,
+				7DB3175E218224D900C6407D /* Assets.xcassets */,
+				7DB31760218224D900C6407D /* Info.plist */,
+				7DB31761218224D900C6407D /* PushNotificationPayload.apns */,
+			);
+			path = "Orakle WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DB3171B218224D700C6407D /* Orakle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB3176C218224D900C6407D /* Build configuration list for PBXNativeTarget "Orakle" */;
+			buildPhases = (
+				7DB31718218224D700C6407D /* Sources */,
+				7DB31719218224D700C6407D /* Frameworks */,
+				7DB3171A218224D700C6407D /* Resources */,
+				7DB3176B218224D900C6407D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DB31747218224D800C6407D /* PBXTargetDependency */,
+			);
+			name = Orakle;
+			productName = Orakle;
+			productReference = 7DB3171C218224D700C6407D /* Orakle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DB3172F218224D800C6407D /* OrakleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB3176F218224D900C6407D /* Build configuration list for PBXNativeTarget "OrakleTests" */;
+			buildPhases = (
+				7DB3172C218224D800C6407D /* Sources */,
+				7DB3172D218224D800C6407D /* Frameworks */,
+				7DB3172E218224D800C6407D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DB31732218224D800C6407D /* PBXTargetDependency */,
+			);
+			name = OrakleTests;
+			productName = OrakleTests;
+			productReference = 7DB31730218224D800C6407D /* OrakleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7DB3173A218224D800C6407D /* OrakleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB31772218224D900C6407D /* Build configuration list for PBXNativeTarget "OrakleUITests" */;
+			buildPhases = (
+				7DB31737218224D800C6407D /* Sources */,
+				7DB31738218224D800C6407D /* Frameworks */,
+				7DB31739218224D800C6407D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DB3173D218224D800C6407D /* PBXTargetDependency */,
+			);
+			name = OrakleUITests;
+			productName = OrakleUITests;
+			productReference = 7DB3173B218224D800C6407D /* OrakleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7DB31743218224D800C6407D /* Orakle WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB31768218224D900C6407D /* Build configuration list for PBXNativeTarget "Orakle WatchKit App" */;
+			buildPhases = (
+				7DB31742218224D800C6407D /* Resources */,
+				7DB31767218224D900C6407D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DB31756218224D800C6407D /* PBXTargetDependency */,
+			);
+			name = "Orakle WatchKit App";
+			productName = "Orakle WatchKit App";
+			productReference = 7DB31744218224D800C6407D /* Orakle WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7DB31752218224D800C6407D /* Orakle WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB31764218224D900C6407D /* Build configuration list for PBXNativeTarget "Orakle WatchKit Extension" */;
+			buildPhases = (
+				7DB3174F218224D800C6407D /* Sources */,
+				7DB31750218224D800C6407D /* Frameworks */,
+				7DB31751218224D800C6407D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Orakle WatchKit Extension";
+			productName = "Orakle WatchKit Extension";
+			productReference = 7DB31753218224D800C6407D /* Orakle WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DB31714218224D700C6407D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "OM FOR YOU Co., Ltd.";
+				TargetAttributes = {
+					7DB3171B218224D700C6407D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					7DB3172F218224D800C6407D = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 7DB3171B218224D700C6407D;
+					};
+					7DB3173A218224D800C6407D = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 7DB3171B218224D700C6407D;
+					};
+					7DB31743218224D800C6407D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					7DB31752218224D800C6407D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 7DB31717218224D700C6407D /* Build configuration list for PBXProject "Orakle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DB31713218224D700C6407D;
+			productRefGroup = 7DB3171D218224D700C6407D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DB3171B218224D700C6407D /* Orakle */,
+				7DB3172F218224D800C6407D /* OrakleTests */,
+				7DB3173A218224D800C6407D /* OrakleUITests */,
+				7DB31743218224D800C6407D /* Orakle WatchKit App */,
+				7DB31752218224D800C6407D /* Orakle WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DB3171A218224D700C6407D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB3172A218224D800C6407D /* LaunchScreen.storyboard in Resources */,
+				7DB31727218224D800C6407D /* Assets.xcassets in Resources */,
+				7DB31725218224D700C6407D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB3172E218224D800C6407D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB31739218224D800C6407D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB31742218224D800C6407D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB3174D218224D800C6407D /* Assets.xcassets in Resources */,
+				7DB3174B218224D800C6407D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB31751218224D800C6407D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB3175F218224D900C6407D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DB31718218224D700C6407D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB31722218224D700C6407D /* ViewController.swift in Sources */,
+				7DB31720218224D700C6407D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB3172C218224D800C6407D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB31735218224D800C6407D /* OrakleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB31737218224D800C6407D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB31740218224D800C6407D /* OrakleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB3174F218224D800C6407D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB3175D218224D800C6407D /* NotificationController.swift in Sources */,
+				7DB3175B218224D800C6407D /* ExtensionDelegate.swift in Sources */,
+				7DB31759218224D800C6407D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DB31732218224D800C6407D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DB3171B218224D700C6407D /* Orakle */;
+			targetProxy = 7DB31731218224D800C6407D /* PBXContainerItemProxy */;
+		};
+		7DB3173D218224D800C6407D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DB3171B218224D700C6407D /* Orakle */;
+			targetProxy = 7DB3173C218224D800C6407D /* PBXContainerItemProxy */;
+		};
+		7DB31747218224D800C6407D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DB31743218224D800C6407D /* Orakle WatchKit App */;
+			targetProxy = 7DB31746218224D800C6407D /* PBXContainerItemProxy */;
+		};
+		7DB31756218224D800C6407D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DB31752218224D800C6407D /* Orakle WatchKit Extension */;
+			targetProxy = 7DB31755218224D800C6407D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7DB31723218224D700C6407D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DB31724218224D700C6407D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7DB31728218224D800C6407D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DB31729218224D800C6407D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7DB31749218224D800C6407D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DB3174A218224D800C6407D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DB31762218224D900C6407D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DB31763218224D900C6407D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DB31765218224D900C6407D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFX2P8D779;
+				INFOPLIST_FILE = "Orakle WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofy.Orakle.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		7DB31766218224D900C6407D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFX2P8D779;
+				INFOPLIST_FILE = "Orakle WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofy.Orakle.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		7DB31769218224D900C6407D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFX2P8D779;
+				IBSC_MODULE = Orakle_WatchKit_Extension;
+				INFOPLIST_FILE = "Orakle WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofy.Orakle.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		7DB3176A218224D900C6407D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFX2P8D779;
+				IBSC_MODULE = Orakle_WatchKit_Extension;
+				INFOPLIST_FILE = "Orakle WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofy.Orakle.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		7DB3176D218224D900C6407D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFX2P8D779;
+				INFOPLIST_FILE = Orakle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofy.Orakle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DB3176E218224D900C6407D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFX2P8D779;
+				INFOPLIST_FILE = Orakle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofy.Orakle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7DB31770218224D900C6407D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFX2P8D779;
+				INFOPLIST_FILE = OrakleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofy.OrakleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orakle.app/Orakle";
+			};
+			name = Debug;
+		};
+		7DB31771218224D900C6407D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFX2P8D779;
+				INFOPLIST_FILE = OrakleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofy.OrakleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orakle.app/Orakle";
+			};
+			name = Release;
+		};
+		7DB31773218224D900C6407D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFX2P8D779;
+				INFOPLIST_FILE = OrakleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofy.OrakleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Orakle;
+			};
+			name = Debug;
+		};
+		7DB31774218224D900C6407D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFX2P8D779;
+				INFOPLIST_FILE = OrakleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofy.OrakleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Orakle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DB31717218224D700C6407D /* Build configuration list for PBXProject "Orakle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB31762218224D900C6407D /* Debug */,
+				7DB31763218224D900C6407D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB31764218224D900C6407D /* Build configuration list for PBXNativeTarget "Orakle WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB31765218224D900C6407D /* Debug */,
+				7DB31766218224D900C6407D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB31768218224D900C6407D /* Build configuration list for PBXNativeTarget "Orakle WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB31769218224D900C6407D /* Debug */,
+				7DB3176A218224D900C6407D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB3176C218224D900C6407D /* Build configuration list for PBXNativeTarget "Orakle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB3176D218224D900C6407D /* Debug */,
+				7DB3176E218224D900C6407D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB3176F218224D900C6407D /* Build configuration list for PBXNativeTarget "OrakleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB31770218224D900C6407D /* Debug */,
+				7DB31771218224D900C6407D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB31772218224D900C6407D /* Build configuration list for PBXNativeTarget "OrakleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB31773218224D900C6407D /* Debug */,
+				7DB31774218224D900C6407D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DB31714218224D700C6407D /* Project object */;
+}
